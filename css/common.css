@@ -4,8 +4,8 @@
 
 body {
   margin: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
@@ -21,4 +21,26 @@ input {
 button {
   padding: 8px 12px;
   cursor: pointer;
+}
+
+.gallery {
+  margin: -20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery__item {
+  margin: 20px;
+  list-style: none;
+  overflow: hidden;
+}
+
+.gallery_image {
+  display: block;
+  height: 250px;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+.gallery_image:hover {
+  transform: scale(2) rotate(25deg);
 }
